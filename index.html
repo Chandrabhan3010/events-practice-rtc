@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>events practice</title>
+    <script>
+        let count = 0;
+
+        function inc() {
+            count++;
+            document.getElementById("counter").innerHTML = count;
+        }
+
+        function dec() {
+            count--;
+            document.getElementById("counter").innerHTML = count;
+        }
+
+        function reset() {
+            count = 0;
+            document.getElementById("counter").innerHTML = count;
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1 class="heading">javascript events homework </h1>
+    <div class="shirt-card-container">
+
+        <div class="shirt-card-img">
+            <img src="./f1.jpg" alt="">
+        </div>
+
+        <div class="shirt-card-discription">
+            <div class="discription">
+                <b>Relogio Masculino</b>
+
+                <p style="margin: 5px; font-size: 13px">Relogio Masculino Lige Mens Watches Top Brand Luxury Gold shirt
+                </p>
+
+                <b style="margin: 5px;">$49.99</b>
+
+                <b style="margin: 5px;">⭐⭐⭐⭐⭐</b>
+            </div>
+            <div class="events">
+                <button onClick="dec()" class="event-btn"> <img src="./icons8-plus-math-50.png" width="20px"
+                        alt=""></button>
+                <button onClick="reset()" id="counter" class="event-btn"> <img src="./icons8-zero-67.png" width="30px"
+                        alt=""></button>
+                <button onClick="inc()" class="event-btn"><img src="./icons8-minus-24.png" width="20px" alt=""></button>
+            </div>
+
+            <div class="cart-btn">
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
